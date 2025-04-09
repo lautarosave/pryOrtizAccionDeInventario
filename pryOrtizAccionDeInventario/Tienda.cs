@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryOrtizAccionDeInventario
 {
-    public partial class Form1 : Form
+    public partial class Tienda : Form
     {
-        public Form1()
+        public Tienda()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace pryOrtizAccionDeInventario
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Tienda_Load(object sender, EventArgs e)
+        {
+            ClsConexionBD  objConectarBD = new ClsConexionBD();
+
+            objConectarBD.ConectarBD();
         }
     }
 }

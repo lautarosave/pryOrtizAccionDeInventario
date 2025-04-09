@@ -1,6 +1,6 @@
 ﻿namespace pryOrtizAccionDeInventario
 {
-    partial class Form1
+    partial class Tienda
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -31,16 +31,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +80,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(415, 231);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 75;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 75;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Descripcion ";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 75;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 75;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Stock";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 75;
             // 
             // textBox1
             // 
@@ -126,37 +156,7 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Codigo:";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 75;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 75;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descripcion ";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 75;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 75;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Stock";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 75;
-            // 
-            // Form1
+            // Tienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,8 +170,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Tienda";
+            this.Text = "Tienda";
+            this.Load += new System.EventHandler(this.Tienda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
