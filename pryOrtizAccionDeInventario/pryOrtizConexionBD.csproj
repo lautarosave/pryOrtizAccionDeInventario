@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsConexionBD.cs" />
+    <Compile Include="FrmAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregar.Designer.cs">
+      <DependentUpon>FrmAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminar.Designer.cs">
+      <DependentUpon>FrmEliminar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tienda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAgregar.resx">
+      <DependentUpon>FrmAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminar.resx">
+      <DependentUpon>FrmEliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tienda.resx">
       <DependentUpon>Tienda.cs</DependentUpon>
     </EmbeddedResource>

@@ -29,5 +29,18 @@ namespace pryOrtizAccionDeInventario
             objConectarBD.ConectarBD();
             objConectarBD.Mostrar(dgvDato);
         }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAgregar frmAgregar = new FrmAgregar();
+            frmAgregar.ShowDialog();
+            
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEliminar frmEliminar = new FrmEliminar();
+            frmEliminar.ShowDialog();
+        }
     }
 }

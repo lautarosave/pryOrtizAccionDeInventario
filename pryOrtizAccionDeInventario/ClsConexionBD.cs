@@ -17,7 +17,7 @@ namespace pryOrtizAccionDeInventario
 
         SqlCommand ComandoBaseDatos;
 
-        string cadenaconexion = "Server=localhost;Database=Ventas2;Trusted_Connection=True;";
+        string cadenaconexion = "Server=localhost;Database=Comercio;Trusted_Connection=True;";
 
         public string nombreBaseDeDatos;
 
@@ -48,7 +48,7 @@ namespace pryOrtizAccionDeInventario
                 {
                     Conexion.Open();
 
-                    string consulta = "SELECT * From Contactos";
+                    string consulta = "SELECT * From Productos";
                     using(SqlDataAdapter adaptador =  new SqlDataAdapter(consulta, Conexion))
                     {
                         DataTable tabla = new DataTable();
