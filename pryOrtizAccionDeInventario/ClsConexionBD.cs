@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Windows.Forms;
+using System.Data;
 
 
 namespace pryOrtizAccionDeInventario
@@ -37,6 +38,31 @@ namespace pryOrtizAccionDeInventario
                 MessageBox.Show("Tiene un errorcito - " + error.Message);
             }
 
+        }
+
+        public void Mostrar(DataGridView Grilla)
+        {
+            try
+            {
+                using (SqlConnection Conexion = new SqlConnection(cadenaconexion))
+                {
+                    Conexion.Open();
+
+                    string consulta = "SELECT * From Contactos";
+                    using(SqlDataAdapter adaptador =  new SqlDataAdapter(consulta, Conexion))
+                    {
+                        DataTable tabla = new DataTable();
+                        adaptador.Fill(tabla);
+                        Grilla.DataSource = tabla;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+              MessageBox.Show ("Error al mostrar datos - " + error.Message);
+
+                coneccionBaseDatos.Close();
+            }
         }
     }
 

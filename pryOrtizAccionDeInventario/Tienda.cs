@@ -27,6 +27,7 @@ namespace pryOrtizAccionDeInventario
             ClsConexionBD  objConectarBD = new ClsConexionBD();
 
             objConectarBD.ConectarBD();
+            objConectarBD.Mostrar(dgvDato);
         }
     }
 }
