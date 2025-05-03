@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryOrtizAccionDeInventario
 {
-    public partial class Tienda : Form
+    public partial class frmTienda : Form
     {
-        public Tienda()
+        public frmTienda()
         {
             InitializeComponent();
         }
