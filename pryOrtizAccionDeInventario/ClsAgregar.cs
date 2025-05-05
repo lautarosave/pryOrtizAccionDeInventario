@@ -24,5 +24,6 @@ namespace pryOrtizAccionDeInventario
                 aux.siguiente = nuevo;
             }
         }
+        
     }
 }

@@ -17,7 +17,7 @@ namespace pryOrtizAccionDeInventario
 
         SqlCommand ComandoBaseDatos;
 
-        public string cadenaconexion = "Server=pedilo;Database=Comercio;Trusted_Connection=True;";
+        public string cadenaconexion = "Server=localhost;Database=Comercio;Trusted_Connection=True;";
 
         public string nombreBaseDeDatos;
 
@@ -178,6 +178,7 @@ namespace pryOrtizAccionDeInventario
         {
             return ejecutarConsulta("SELECT * FROM Productos");
         }
+
     }
 
     

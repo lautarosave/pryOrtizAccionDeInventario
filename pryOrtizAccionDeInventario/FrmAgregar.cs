@@ -37,6 +37,8 @@ namespace pryOrtizAccionDeInventario
             cmbCategoria.ValueMember = "Id";        // El valor real (por ejemplo, para guardar en DB)
             cmbCategoria.SelectedIndex = -1;        // Opcional, para que no haya nada seleccionado al inicio
             int idCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
+
+            btnAceptar.Enabled = false;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -57,6 +59,41 @@ namespace pryOrtizAccionDeInventario
 
             dgvDato.DataSource = objConectarBD.ObtenerDatosTabla("Contactos");
         }
+        private void VerificarCampos()
+        {
+            bool camposValidos =
+                !string.IsNullOrWhiteSpace(txtNombre.Text) &&
+                !string.IsNullOrWhiteSpace(txtDescripcion.Text) &&
+                decimal.TryParse(txtPrecio.Text, out _) &&
+                int.TryParse(txtStock.Text, out _) &&
+                cmbCategoria.SelectedIndex >= 0;
 
+            btnAceptar.Enabled = camposValidos;
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
     }
 }

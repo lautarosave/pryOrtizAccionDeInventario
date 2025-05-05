@@ -40,10 +40,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(154, 134);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(103, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 32;
             this.label1.Text = "ELIMINAR";
             // 
@@ -52,28 +51,25 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(79, 201);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(53, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 60;
             this.label3.Text = "Codigo:";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(83, 248);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCodigo.Location = new System.Drawing.Point(55, 161);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(250, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(168, 20);
             this.txtCodigo.TabIndex = 57;
             // 
             // btnAceptar
             // 
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAceptar.Location = new System.Drawing.Point(106, 409);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAceptar.Location = new System.Drawing.Point(71, 266);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(182, 35);
+            this.btnAceptar.Size = new System.Drawing.Size(121, 23);
             this.btnAceptar.TabIndex = 56;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -87,27 +83,26 @@
             this.dgvDato.AllowUserToResizeColumns = false;
             this.dgvDato.AllowUserToResizeRows = false;
             this.dgvDato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDato.Location = new System.Drawing.Point(408, 84);
-            this.dgvDato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvDato.Location = new System.Drawing.Point(272, 55);
             this.dgvDato.Name = "dgvDato";
             this.dgvDato.ReadOnly = true;
             this.dgvDato.RowHeadersWidth = 62;
-            this.dgvDato.Size = new System.Drawing.Size(531, 360);
+            this.dgvDato.Size = new System.Drawing.Size(354, 234);
             this.dgvDato.TabIndex = 71;
             // 
             // FrmEliminar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(964, 490);
+            this.ClientSize = new System.Drawing.Size(643, 318);
             this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmEliminar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar";
             this.Load += new System.EventHandler(this.Eliminar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDato)).EndInit();
