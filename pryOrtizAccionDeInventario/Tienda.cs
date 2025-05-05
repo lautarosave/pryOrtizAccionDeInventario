@@ -18,7 +18,7 @@ namespace pryOrtizAccionDeInventario
             InitializeComponent();
             objConectarBD.Mostrar(dgvDato);
         }
-
+        ClsConexionBD conexion = new ClsConexionBD();
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -57,6 +57,11 @@ namespace pryOrtizAccionDeInventario
         {
             FrmModificar frmModificar = new FrmModificar();
             frmModificar.ShowDialog();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            conexion.Mostrar(dgvDato);
         }
     }
 }
