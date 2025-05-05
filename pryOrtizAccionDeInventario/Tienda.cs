@@ -12,9 +12,11 @@ namespace pryOrtizAccionDeInventario
 {
     public partial class frmTienda : Form
     {
+        ClsConexionBD objConectarBD = new ClsConexionBD();
         public frmTienda()
         {
             InitializeComponent();
+            objConectarBD.Mostrar(dgvDato);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -24,12 +26,8 @@ namespace pryOrtizAccionDeInventario
 
         private void Tienda_Load(object sender, EventArgs e)
         {
-            ClsConexionBD  objConectarBD = new ClsConexionBD();
-
             objConectarBD.ConectarBD();
             objConectarBD.Mostrar(dgvDato);
-
-           
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,7 +50,7 @@ namespace pryOrtizAccionDeInventario
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)

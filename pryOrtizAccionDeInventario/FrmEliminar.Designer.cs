@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(155, 175);
+            this.label1.Location = new System.Drawing.Point(154, 134);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
@@ -52,7 +52,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(79, 260);
+            this.label3.Location = new System.Drawing.Point(79, 201);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 20);
@@ -61,7 +61,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(83, 300);
+            this.txtCodigo.Location = new System.Drawing.Point(83, 248);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(250, 26);
@@ -70,7 +70,7 @@
             // btnAceptar
             // 
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAceptar.Location = new System.Drawing.Point(104, 450);
+            this.btnAceptar.Location = new System.Drawing.Point(106, 409);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(182, 35);
@@ -81,13 +81,19 @@
             // 
             // dgvDato
             // 
+            this.dgvDato.AllowDrop = true;
+            this.dgvDato.AllowUserToAddRows = false;
+            this.dgvDato.AllowUserToDeleteRows = false;
+            this.dgvDato.AllowUserToResizeColumns = false;
+            this.dgvDato.AllowUserToResizeRows = false;
             this.dgvDato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDato.Location = new System.Drawing.Point(456, 113);
+            this.dgvDato.Location = new System.Drawing.Point(408, 84);
             this.dgvDato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDato.Name = "dgvDato";
+            this.dgvDato.ReadOnly = true;
             this.dgvDato.RowHeadersWidth = 62;
-            this.dgvDato.Size = new System.Drawing.Size(576, 372);
-            this.dgvDato.TabIndex = 55;
+            this.dgvDato.Size = new System.Drawing.Size(531, 360);
+            this.dgvDato.TabIndex = 71;
             // 
             // FrmEliminar
             // 
@@ -95,10 +101,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1065, 526);
+            this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmEliminar";

@@ -17,6 +17,7 @@ namespace pryOrtizAccionDeInventario
         {
             InitializeComponent();
         }
+        ClsConexionBD objConectarBD = new ClsConexionBD();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -25,47 +26,37 @@ namespace pryOrtizAccionDeInventario
 
         private void FrmAgregar_Load(object sender, EventArgs e)
         {
-            ClsConexionBD objConectarBD = new ClsConexionBD();
-
+                
             objConectarBD.ConectarBD();
             objConectarBD.Mostrar(dgvDato);
+
+            DataTable categorias = objConectarBD.ObtenerCategorias();
+
+            cmbCategoria.DataSource = categorias;
+            cmbCategoria.DisplayMember = "Nombre";  // Lo que se muestra
+            cmbCategoria.ValueMember = "Id";        // El valor real (por ejemplo, para guardar en DB)
+            cmbCategoria.SelectedIndex = -1;        // Opcional, para que no haya nada seleccionado al inicio
+            int idCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            ClsConexionBD conexion = new ClsConexionBD();
+            string nombre = txtNombre.Text;
+            string descripcion = txtDescripcion.Text;
+            decimal precio = Convert.ToInt32(txtPrecio.Text);
+            int stock = Convert.ToInt32(txtStock.Text);
+            string categoriaId = cmbCategoria.SelectedValue.ToString();
 
-            try
-            {
-                using (SqlConnection con = new SqlConnection(conexion.cadenaconexion))
-                {
-                    con.Open();
+            objConectarBD.InsertarContacto(
+                nombre,
+                descripcion,
+                precio,
+                stock,
+                categoriaId
+            );
 
-                    string query = "INSERT INTO Inventario (Codigo, Nombre, Descripcion, Precio, Stock, Categoria) " +
-                           "VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @Stock, @Categoria)";
-
-                    SqlCommand cmd = new SqlCommand(query, con);
-
-                    cmd.Parameters.Add(new SqlParameter("@Codigo", SqlDbType.Int) { Value = int.Parse(txtCodigo.Text) });
-                    cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar, 100) { Value = txtNombre.Text });
-                    cmd.Parameters.Add(new SqlParameter("@Descripcion", SqlDbType.VarChar, 250) { Value = txtDescripcion.Text });
-                    cmd.Parameters.Add(new SqlParameter("@Precio", SqlDbType.Decimal)
-                    {
-                        Precision = 18,
-                        Scale = 2,
-                        Value = decimal.Parse(txtPrecio.Text)
-                    });
-                    cmd.Parameters.Add(new SqlParameter("@Stock", SqlDbType.Int) { Value = int.Parse(txtStock.Text) });
-                    cmd.Parameters.Add(new SqlParameter("@Categoria", SqlDbType.VarChar, 50) { Value = cmbCategoria.SelectedItem.ToString() });
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Datos guardados correctamente.");
-            }   }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            dgvDato.DataSource = objConectarBD.ObtenerDatosTabla("Contactos");
         }
+
     }
 }
