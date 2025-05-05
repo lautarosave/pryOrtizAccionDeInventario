@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1065, 526);
+            this.ClientSize = new System.Drawing.Size(964, 490);
             this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCodigo);

@@ -176,6 +176,7 @@
             this.dgvDato.AllowUserToResizeColumns = false;
             this.dgvDato.AllowUserToResizeRows = false;
             this.dgvDato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDato.GridColor = System.Drawing.SystemColors.ControlText;
             this.dgvDato.Location = new System.Drawing.Point(414, 130);
             this.dgvDato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDato.Name = "dgvDato";
@@ -189,8 +190,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1249, 602);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(1186, 571);
             this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label6);
@@ -204,7 +205,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmModificar";
             this.Text = "Modificar";
             this.Load += new System.EventHandler(this.FrmModificar_Load);
