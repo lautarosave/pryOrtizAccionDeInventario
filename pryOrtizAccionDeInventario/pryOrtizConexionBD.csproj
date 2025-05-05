@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsAgregar.cs" />
     <Compile Include="ClsConexionBD.cs" />
+    <Compile Include="ClsEliminar.cs" />
+    <Compile Include="ClsModificar.cs" />
     <Compile Include="ClsNodo.cs" />
     <Compile Include="FrmAgregar.cs">
       <SubType>Form</SubType>

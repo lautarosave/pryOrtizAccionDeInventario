@@ -30,19 +30,19 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.dgvDato = new System.Windows.Forms.DataGridView();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDato)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,14 +70,6 @@
             this.label6.TabIndex = 54;
             this.label6.Text = "Descripcion:";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(82, 491);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(250, 26);
-            this.textBox5.TabIndex = 53;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -90,13 +82,13 @@
             this.label7.TabIndex = 52;
             this.label7.Text = "Categoria:";
             // 
-            // textBox6
+            // txtStock
             // 
-            this.textBox6.Location = new System.Drawing.Point(82, 411);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(250, 26);
-            this.textBox6.TabIndex = 51;
+            this.txtStock.Location = new System.Drawing.Point(82, 411);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(250, 26);
+            this.txtStock.TabIndex = 51;
             // 
             // label4
             // 
@@ -110,13 +102,13 @@
             this.label4.TabIndex = 50;
             this.label4.Text = "Stock:";
             // 
-            // textBox3
+            // txtPrecio
             // 
-            this.textBox3.Location = new System.Drawing.Point(82, 327);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 26);
-            this.textBox3.TabIndex = 49;
+            this.txtPrecio.Location = new System.Drawing.Point(82, 327);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(250, 26);
+            this.txtPrecio.TabIndex = 49;
             // 
             // label5
             // 
@@ -130,13 +122,13 @@
             this.label5.TabIndex = 48;
             this.label5.Text = "Precio:";
             // 
-            // textBox4
+            // txtDescripcion
             // 
-            this.textBox4.Location = new System.Drawing.Point(82, 250);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 26);
-            this.textBox4.TabIndex = 47;
+            this.txtDescripcion.Location = new System.Drawing.Point(82, 250);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(250, 26);
+            this.txtDescripcion.TabIndex = 47;
             // 
             // label3
             // 
@@ -150,13 +142,13 @@
             this.label3.TabIndex = 46;
             this.label3.Text = "Codigo:";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(82, 176);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 26);
-            this.textBox2.TabIndex = 45;
+            this.txtNombre.Location = new System.Drawing.Point(82, 176);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(250, 26);
+            this.txtNombre.TabIndex = 45;
             // 
             // label2
             // 
@@ -170,13 +162,13 @@
             this.label2.TabIndex = 44;
             this.label2.Text = "Nombre:";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 108);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 26);
-            this.textBox1.TabIndex = 43;
+            this.txtCodigo.Location = new System.Drawing.Point(82, 108);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(250, 26);
+            this.txtCodigo.TabIndex = 43;
             // 
             // btnAceptar
             // 
@@ -188,6 +180,7 @@
             this.btnAceptar.TabIndex = 42;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // dgvDato
             // 
@@ -199,24 +192,32 @@
             this.dgvDato.Size = new System.Drawing.Size(746, 355);
             this.dgvDato.TabIndex = 41;
             // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(82, 489);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(250, 28);
+            this.cmbCategoria.TabIndex = 70;
+            // 
             // FrmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1274, 600);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.dgvDato);
             this.Controls.Add(this.label1);
@@ -233,18 +234,18 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.DataGridView dgvDato;
+        private System.Windows.Forms.ComboBox cmbCategoria;
     }
 }

@@ -17,7 +17,7 @@ namespace pryOrtizAccionDeInventario
 
         SqlCommand ComandoBaseDatos;
 
-        string cadenaconexion = "Server=pedilo;Database=Comercio;Trusted_Connection=True;";
+        public string cadenaconexion = "Server=pedilo;Database=Comercio;Trusted_Connection=True;";
 
         public string nombreBaseDeDatos;
 

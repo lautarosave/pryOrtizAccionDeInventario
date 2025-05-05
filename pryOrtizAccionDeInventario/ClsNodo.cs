@@ -13,7 +13,8 @@ namespace pryOrtizAccionDeInventario
         private string desc;
         private Int32 pre;
         private Int32 sto;
-        private string cat;
+        private Int32 cat;
+        private ClsNodo sig;
 
         public Int32 codigo
         {
@@ -40,12 +41,16 @@ namespace pryOrtizAccionDeInventario
             get { return sto; }
             set { sto = value; }
         }
-        public string categoria
+        public Int32 categoria
         {
             get { return cat; }
             set { cat = value; }
         }
-
+        public ClsNodo siguiente
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
 
     }
 }
